@@ -24,7 +24,7 @@
 
 | 항목 | 내용 |
 |:---|:---|
-| **(1) 요구사항 정의** | *프로젝트를 완성하기 위해 필요한 요구사항을 설명하기에 가장 적합한 방법을 선택하여 기술* <br> 예) <br> - 기능별 상세 요구사항(또는 유스케이스) <br> - 설계 모델(클래스 다이어그램, 클래스 및 모듈 명세서) <br> - UI 분석/설계 모델 <br> - E-R 다이어그램/DB 설계 모델(테이블 구조) |
+| **(1) 요구사항 정의** | - E-R 다이어그램 <br> <img src="/Images/ERD.png"> |
 | **(2) 전체 시스템 구성** | <img src="/Images/시스템구조도.svg"> |
 | **(3) 주요 엔진 및 기능 설계** | 1. AI 챗봇: GPT 3.5 <br> - 기능: 챗봇을 이용한 사용자 취향 분석 <br> - 입력: 사용자 입력 채팅 <br> - 출력: 문맥에 맞는 응답 <br> - 처리: 사용자 취향 데이터 업데이트 <br><br> 2. 추천 알고리즘: surprise, scikit-learn <br> - 기능: 사용자 취향 및 선호도를 기반으로 여가 활동 추천 <br> - 콘텐츠 기반 추천(https://scikit-learn.org/stable/modules/metrics.html#metrics) <br> - 협업 필터링(https://github.com/NicolasHug/Surprise) <br> - 신규 유저와 기존 유저를 나누어 적절한 알고리즘 적용 <br><br> 3. 데이터 수집: OpenAPI <br> - 영화 상영 정보(https://www.kobis.or.kr/kobisopenapi/homepg/apiservice/searchServiceInfo.do) <br> - 공연/전시 정보(https://www.data.go.kr/data/15000120/openapi.do) <br><br> 4. 기타 API <br> - 구글 캘린더(https://calendar.google.com/) <br> - 네이버 지도API(https://www.ncloud.com/) <br><br> 5. 사용자 CRUD 데이터 <br> - 기능: 사용자 정보, 찜/예약/리뷰 데이터 처리 <br> - DB: MySQL <br> - 배포: AWS RDS(https://aws.amazon.com/ko/rds/) |
 | **(4) 주요 기능의 구현** | *<주요 기능 리스트>에 정의된 기능 중 최소 2개 이상에 대한 상세 구현내용을 기술한다.* |
